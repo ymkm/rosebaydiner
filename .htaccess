@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST}   !^rosebaydiner\.com\.au [NC]
+RewriteCond %{HTTP_HOST}   !^$
+RewriteRule ^/?(.*)         http://rosebaydiner.com.au/$1 [L,R,NE]
+</IfModule>
+
